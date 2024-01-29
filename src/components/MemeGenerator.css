@@ -1,0 +1,172 @@
+/* src/MemeGenerator.css */
+/* src/MemeGenerator.css */
+.meme-generator-container {
+  text-align: left; /* Align text to the left */
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px; /* Add margin at the bottom for spacing */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.meme-display-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.meme-image-container {
+  position: relative;
+}
+
+.top-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 70px;
+  font-family: 'Impact', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.text-input-container {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* src/components/MemeGenerator.css */
+.random-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.color-label {
+  color: #007bff; /* Blue color */
+}
+
+.color-input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.color-input:hover {
+  background-color: #f0f0f0;
+}
+
+/* src/MemeGenerator.css */
+/* ... other styles ... */
+
+.increase-font, .decrease-font {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.increase-font:hover, .decrease-font:hover {
+  background-color: #45a049;
+}
+
+.emoji-mart-emoji {
+  margin-bottom: 4px;
+}
+
+.color-picker-container {
+  position: relative;
+}
+
+.color-picker-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.color-preview {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+/* Add styles for SketchPicker */
+.react-color {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 2;
+}
+
+/* Add this to your CSS */
+.emoji-buttons {
+  display: flex;
+  margin-top: 5px;
+}
+
+.emoji-buttons button {
+  margin-right: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.emoji-buttons button:hover {
+  background-color: #45a049;
+}
+
