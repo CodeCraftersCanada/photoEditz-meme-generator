@@ -1,7 +1,7 @@
 /* src/MemeGenerator.css */
 /* src/MemeGenerator.css */
 .meme-generator-container {
-  text-align: left; /* Align text to the left */
+  text-align: center; /* Align text to the left */
   padding: 20px;
 }
 
@@ -57,8 +57,23 @@ button {
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
 }
+
+/* Specific styles for certain labels */
+.label-text-color {
+  color: #007bff; /* Blue color */
+}
+
+.label-font-size,
+.label-font-style {
+  color: #4CAF50; /* Green color */
+}
+
 
 input {
   padding: 10px;
@@ -168,5 +183,52 @@ input {
 
 .emoji-buttons button:hover {
   background-color: #45a049;
+}
+
+/* Add these styles to your MemeGenerator.css or your main CSS file */
+
+.text-format-buttons {
+  display: flex;
+  margin-top: 5px;
+}
+
+.text-format-buttons button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.text-format-buttons button.active {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.text-format-buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+.text-format-buttons button:disabled {
+  cursor: not-allowed;
+}
+
+/* Tooltip styles */
+.text-format-buttons button[title]:hover:after {
+  content: attr(title);
+  display: inline-block;
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
