@@ -1,13 +1,7 @@
-/* src/MemeGenerator.css */
-/* src/MemeGenerator.css */
 .meme-generator-container {
-  text-align: center; /* Align text to the left */
+  text-align: center;
+  /* Align text to the left */
   padding: 20px;
-}
-
-h1 {
-  color: #333;
-  margin-bottom: 10px; /* Add margin at the bottom for spacing */
 }
 
 button {
@@ -31,6 +25,7 @@ button {
 
 .meme-image-container {
   position: relative;
+  max-width: 100%; 
 }
 
 .top-text {
@@ -66,12 +61,14 @@ label {
 
 /* Specific styles for certain labels */
 .label-text-color {
-  color: #007bff; /* Blue color */
+  color: #007bff;
+  /* Blue color */
 }
 
 .label-font-size,
 .label-font-style {
-  color: #4CAF50; /* Green color */
+  color: #4CAF50;
+  /* Green color */
 }
 
 
@@ -83,7 +80,8 @@ input {
 
 /* src/components/MemeGenerator.css */
 .random-button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
+  /* Green */
   border: none;
   color: white;
   padding: 10px 32px;
@@ -98,7 +96,8 @@ input {
 
 
 .color-label {
-  color: #007bff; /* Blue color */
+  color: #007bff;
+  /* Blue color */
 }
 
 .color-input {
@@ -117,7 +116,8 @@ input {
 /* src/MemeGenerator.css */
 /* ... other styles ... */
 
-.increase-font, .decrease-font {
+.increase-font,
+.decrease-font {
   background-color: #4CAF50;
   color: white;
   padding: 10px 15px;
@@ -128,7 +128,8 @@ input {
   margin-right: 5px;
 }
 
-.increase-font:hover, .decrease-font:hover {
+.increase-font:hover,
+.decrease-font:hover {
   background-color: #45a049;
 }
 
@@ -232,3 +233,29 @@ input {
   white-space: nowrap;
 }
 
+.header-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px; /* Set your desired logo width */
+  height: auto;
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+h1 {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  margin-right: 10px; /* Adjust the margin as needed */
+}

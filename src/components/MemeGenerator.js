@@ -36,6 +36,18 @@ const MemeGenerator = () => {
   const dragStartPointImage = useRef({ x: 0, y: 0 });
   const [uploadedImagePosition, setUploadedImagePosition] = useState({ top: 50, left: 50 });
 
+  const [logoImage, setLogoImage] = useState(null);
+
+
+  useEffect(() => {
+    const logoImageUrl = '/image/logo.png';
+    const logo = new Image();
+    logo.src = logoImageUrl;
+
+    logo.onload = () => {
+      setLogoImage(logo);
+    };
+  }, []);
 
   useEffect(() => {
     axios.get('https://api.imgflip.com/get_memes')
@@ -245,7 +257,12 @@ const MemeGenerator = () => {
         handleMouseUpImage(); // Handle release for the uploaded image
       }}
     >
-      <h1>Meme Generator</h1>
+      <div className="header-container">
+        <div className="header">
+          {logoImage && <img src={logoImage.src} alt="Logo" className="logo" />}
+          <h1>Meme Generator</h1>
+        </div>
+      </div>
       <button className="random-button" onClick={getRandomMeme}>Get Random Meme</button>
       {selectedMeme && (
         <div className="meme-display-container">
