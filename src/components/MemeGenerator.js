@@ -385,7 +385,7 @@ const MemeGenerator = () => {
               </select>
             </div>
             <div>
-              <button className="download-button" onClick={handleDownload}>
+              <button className="random-button" onClick={handleDownload}>
                 Download Meme
               </button>
             </div>
